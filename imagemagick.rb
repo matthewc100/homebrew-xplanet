@@ -42,7 +42,7 @@ class Imagemagick < Formula
   depends_on "openexr" => :optional
   depends_on "pango" => :optional
   depends_on "perl" => :optional
-  depends_on :x11 => :optional
+#  depends_on :x11 => :optional
 
   skip_clean :la
 
@@ -72,7 +72,7 @@ class Imagemagick < Formula
     args << "--without-fftw" if build.without? "fftw"
     args << "--without-pango" if build.without? "pango"
     args << "--with-rsvg" if build.with? "librsvg"
-    args << "--without-x" if build.without? "x11"
+#    args << "--without-x" if build.without? "x11"
     args << "--with-fontconfig=yes" if build.with? "fontconfig"
     args << "--without-wmf" if build.without? "libwmf"
 
