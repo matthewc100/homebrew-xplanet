@@ -42,7 +42,7 @@ class Imagemagick < Formula
   depends_on "openexr" => :optional
   depends_on "pango" => :optional
   depends_on "perl" => :optional
-  depends_on :x11 => :optional
+  depends_on "libx11" => :optional
 
   skip_clean :la
 
