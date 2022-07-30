@@ -41,7 +41,7 @@ class Xplanet < Formula
     end
   end
 
-  option "with-x11", "Build for X11 instead of Aqua"
+  #option "with-x11", "Build for X11 instead of Aqua"
   option "with-all", "Build with default Xplanet configuration dependencies"
   option "with-cspice", "Build Xplanet with JPLs SPICE toolkit support"
   option "with-netpbm", "Build Xplanet with PNM graphic support"
@@ -66,7 +66,7 @@ class Xplanet < Formula
   depends_on "netpbm" => :optional
   depends_on "pango" => :optional
 
-  depends_on :x11 => :optional
+#  depends_on :x11 => :optional
 
   def install
     args = %W[
